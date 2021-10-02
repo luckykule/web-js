@@ -1,1 +1,19 @@
-node
+node和Stream
+
+（1）node常用模块：
+如：http：
+  通过http构建本地服务器，例如：
+  const http = require("http");
+  const server = http.createServer((req,res)=>{
+    res.write("hello world");
+    res.end;
+    })
+  server.listen(8888);
+  同样也可以通过http实现服务器的网络请求。
+  还有fs模块，可以通过fs模块实现服务器端的文件操作，实现服务器文件的增删改查操作。
+  path模块提供各种处理路劲的API，body-parser模块来处理接收post请求到服务器端的数据.等
+
+（2）Stream
+    Stream流是一种抽象数据结构。可以用它来读取和写入数据，通过流来读取和写入数据可以防止内存溢出。
+    才去流方式处理数据会把数据分成64小块数据，异步依次来进行传递，更加节约性能。
+    
