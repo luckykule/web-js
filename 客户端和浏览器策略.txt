@@ -1,0 +1,2 @@
+客户端有几种缓存方式？
+浏览器出现from disk 和from memory的策略是啥？
